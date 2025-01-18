@@ -1599,7 +1599,7 @@ type StickerPack struct {
 // User Object
 // https://discord.com/developers/docs/resources/user#user-object
 type User struct {
-	ID               Snowflake `json:"id"`
+	ID               Snowflake `json:"id,string"`
 	Username         string    `json:"username"`
 	Discriminator    string    `json:"discriminator"`
 	GlobalName       *string   `json:"global_name"`
